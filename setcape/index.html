@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetaBlock | Set cape</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/form.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body class="night" onload="start()">
+    <header>
+        <div class="main">
+            <div id="logo">
+                <img src="/images/file.png">
+            </div>
+            <ul id="menu">
+                <li><span onclick="document.location='/'">Home</span></li>
+                <li><span onclick="document.location='/'">Download</span></li>
+                <li><p>| Set:</p></li>
+                <li><span onclick="document.location='/setversion'">Version</span></li>
+                <li><span onclick="document.location='/setskin'">Skin</span></li>
+            </ul>
+            <ul id="register">
+                <li><a href="/register">Create new account</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container maining">
+        <div class="main">
+            <div class="left-side form">
+                <div class="ok">
+                    <img src="/images/animals.png">
+                <div class="title">Set cape</div>
+                <form action="/register" method="post">
+                <input type="text" name="username" placeholder="Username" minlength="3" maxlength="16" required="">
+            <input type="password" name="password" placeholder="Password" minlength="6" maxlength="72" required="">
+            <input type="file" name="image" accept="image/png" required="">
+            <input type="submit" value="Submit">
+            </form>
+            </div></div>
+    </div>
+    <footer>
+        (C) Copyright 2025 BetaBlock. This website uses assets from the game called Minecraft. This project is not associated or affiliated with Mojang or Microsoft Corporation. All rights reserved.
+    </footer>
+</body>
+</html>

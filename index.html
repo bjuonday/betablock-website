@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetaBlock | Home</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body onload="start()">
+    <header>
+        <div class="main">
+            <div id="logo">
+                <img src="/images/file.png">
+            </div>
+            <ul id="menu">
+                <li><span onclick="page_home()">Home</span></li>
+                <li><span onclick="page_game()">Download</span></li>
+                <li><p>| Set:</p></li>
+                <li><span onclick="document.location='/setversion'">Version</span></li>
+                <li><span onclick="document.location='/setskin'">Skin</span></li>
+                <li><span onclick="document.location='/setcape'">Cape</span></li>
+            </ul>
+            <ul id="register">
+                <li><a href="/register">Create new account</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container maining" id="interpage_home">
+        <div class="main">
+            <div class="left-side">
+                <div class="ok">
+                    <img src="/images/animals.png">
+                <div class="title">BetaBlock</div>
+                <p class="desc">
+                    Want to relive 2011? Well, <b>you can!</b><br><br>
+                    BetaBlock is an alternative Minecraft authorization service that replaces the old Minecraft launcher with our own auth servers. The default version sticks to Beta 1.7.3, but you can have <a href="/setversion">varieties of versions</a> to make dreams come true!
+                </p>
+                <button class="download" onclick="document.location='https://cdn.discordapp.com/attachments/1334225002790129767/1335265616130605067/betablock-launcher.jar?ex=67a0dc02&is=679f8a82&hm=d9655e0398b3a6ea42aed2a2661fd0573be04cb70a2502d64069630c072e1bc8&'">Download now!</button>
+            </div></div><br>
+
+            <div class="right-side">
+                <span>These counters are the placeholders.</span><br>
+        <div class="registeredusers">
+            <span>
+                <span id="regusercount" class="count">0</span>
+                registered users
+            </span><br>
+            <span>
+                <span id="useringamecount" class="count">0</span>
+                in-game
+            </span>
+        </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="interpage_game">
+        <div class="main">
+            <div class="center-side">
+                <h1>Downloads</h1>
+                <hr>
+                <p>
+                    <a href="https://cdn.discordapp.com/attachments/1334225002790129767/1335265616130605067/betablock-launcher.jar?ex=67a0dc02&is=679f8a82&hm=d9655e0398b3a6ea42aed2a2661fd0573be04cb70a2502d64069630c072e1bc8&">Launcher</a><br>
+                    <a href="https://cdn.discordapp.com/attachments/1334225002790129767/1334228492371361872/betablock-server.jar?ex=67a10a9d&is=679fb91d&hm=7b825322ea79fd7d0e80fbd9c91670f11658e49311fa720a5174b7dc71eb5267&">Server</a><br>
+                    <a href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=251639_7ed26d28139143f38c58992680c214a5">Java Runtime</a>
+                </p>
+                <hr class="small">
+                For patching Minecraft with mods:
+                <p>
+                    <a href="https://cdn.discordapp.com/attachments/1334225002790129767/1334279882355638292/HDTextureFix_v2.3.7_02.jar?ex=67a091b9&is=679f4039&hm=0fd3031d0fbd24e4bb8a68a806bf3f13be9f0f5c9ebdb0843d4384626d238911&">MCPatcher v2.3.7_02</a>
+                </p>
+            </div>
+            </div>
+            </div>
+    <footer>
+        (C) Copyright 2025 BetaBlock. This website uses assets from the game called Minecraft. This project is not associated or affiliated with Mojang or Microsoft Corporation. All rights reserved.
+    </footer>
+</body>
+<script src="/index.js"></script>
+</html>

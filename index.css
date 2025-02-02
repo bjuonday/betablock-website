@@ -1,0 +1,351 @@
+/* bjuonday : my code is too messed up, sorry ;-) */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+@font-face {
+  font-family: Minecraft;
+  src: url('/fonts/minecraft.ttf');
+}
+.container button.download {
+  margin-top: 25px;
+  margin-right: 5px;
+}
+:root {
+  --global-scale: 2;
+  --default-shadow: #3F3F3F;
+  --default-color: #FFFFFF;
+}
+body {
+  height: 100vh;
+  background: url('/images/bg.png') #111;
+  background-size: cover;
+  backdrop-filter: blur(10px) contrast(0.8) brightness(45%);
+  font: 13px/1.4 'Helvetica Neue', sans-serif;
+  *font-size: small;
+}
+body.night {
+  background: url('/images/bg_night.png') #111;
+  backdrop-filter: blur(5px) contrast(0.85) brightness(65%);
+}
+.left-side .ok button {
+  float: right;
+}
+@keyframes bg-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -4100px 0;
+  }
+}
+.left-side .ok .title, .container .center-side h1 {
+  font-family: monospace;
+  font-size: 64px;
+  color: white;
+  text-shadow: 0 0 12px white;
+  animation: text-glowing 5s linear infinite;
+  font-weight: bold;
+}
+.container .form .ok .title {
+  font-family: "Minecraft" !important;
+  font-size: 42px;
+  animation: none;
+  text-shadow: 0 0 6px white;
+}
+@keyframes text-glowing {
+  0%,100% {
+    text-shadow: 0 0 12px white;
+  }
+  50% {
+    text-shadow: 0 0 4px white;
+  }
+}
+.left-side .ok img {
+  float: left;
+}
+@keyframes page-appear {
+  0% {
+      margin-top: 5%;
+      opacity: 0;
+  }
+  100% {
+      margin-top: 16px;
+      opacity: 1;
+  }
+}
+body, select, textarea {
+  color: #E0D0D0;
+}
+#menu li a, #menu li a:active, #menu li a:visited, #menu li span, #register li span {
+  color: #fff;
+}
+#menu li span:hover, #register li span:hover {
+  cursor: pointer;
+}
+#video {
+  width: 560px;
+  height: 315px;
+}
+.container b {
+  font-weight: bold;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  font-size: 11px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+header a, header a:active, header a:visited {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+header {
+  background: url("/images/bg_top.png");
+  animation: 6s moving-bg-h linear infinite;
+  height: 48px;
+  box-shadow: 0 1px 6px black;
+}
+@keyframes moving-bg-h {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 48px 0;
+  }
+}
+@keyframes moving-bg-m {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 48px 48px;
+  }
+}
+header a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+#logo {
+  float: left;
+  width: 260px;
+  height: 48px;
+  background: transparent url(/images/file.png) no-repeat 0 4px;
+  background-size: 240px;
+  display: block;
+  overflow: hidden;
+  text-indent: -10000px;
+}
+.container {
+  margin-top: 16px;
+  width: 100%;
+  height: auto;
+  color: white;
+}
+@media screen and (width = 500px) {
+  .container.maining .right-side {
+      width: 500px;
+      text-align: center;
+  }
+}
+.left-side .ok .title, .left-side .ok .desc {
+left: 10px;
+position: relative;
+}
+.left-side .ok .desc {
+left: 15px;
+}
+input {
+font-family: Minecraft;
+}
+input[type="text"], input[type="password"] {
+border: 2px solid black;
+padding: 4px;
+font-size: 16px;
+border-radius: 0;
+background: rgba(0,0,0,0.65);
+color: rgba(255,255,255,0.5);
+}
+.container input[type="file"] {
+margin-top: 10px;
+}
+input[type="submit"], input[type="file"]::file-selector-button, select {
+display: block;
+margin-top: calc(var(--local-scale) * 6px);
+margin-bottom: calc(var(--local-scale) * 6px);
+margin-right: calc(var(--local-scale) * 6px);
+margin-left: calc(var(--local-scale) * 6px);
+box-sizing: border-box;
+padding: calc(var(--local-scale) * 6px) 0px;
+text-align: center;
+text-decoration: none;
+background-size: cover;
+background-image: url("images/button.svg");
+line-height: 1;
+--shadow-color: #383838;
+--text-color: #E0E0E0;
+width: calc(var(--local-scale) * 200px);
+height: calc(var(--local-scale) * 20px);
+}
+input[type="submit"]:hover, input[type="file"]::file-selector-button:hover, select:hover {
+--shadow-color: #3F3F28;
+--text-color: #FFFFA0;
+background-image: url("images/button_active.svg");
+}
+option {
+text-shadow: none;
+}
+select {
+-moz-appearance:none; /* Firefox */
+-webkit-appearance:none; /* Safari and Chrome */
+appearance:none;
+}
+select::after {
+font-size: 12px;
+content: "▼";
+display: block;
+}
+input[type="text"]:focus-visible, input[type="password"]:focus-visible {
+outline: none;
+background: rgba(0,0,0,0.75);
+color: white;
+}
+input[type="submit"], input[type="file"]::file-selector-button, select {
+outline: none;
+border: none;
+--local-scale: calc(var(--scale, 1) * var(--global-scale));
+--local-color: var(--text-color, var(--default-color));
+--local-shadow: var(--shadow-color, var(--default-shadow));
+font-weight: 100;
+font-family: "Minecraft";
+word-spacing: calc(2px * var(--local-scale));
+line-height: calc(9px * var(--local-scale));
+font-size: calc(8px * var(--local-scale));
+text-shadow: calc(var(--local-scale)* 1px) calc(var(--local-scale) * 1px) 0 var(--local-shadow);
+color: var(--local-color);
+}
+button.download {
+background: linear-gradient(0deg,rgb(61, 117, 61),rgb(110, 223, 110));
+padding: 8px 30px;
+color: white;
+font-size: 22px;
+border-radius: 4px;
+font-weight: bold;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+border: 0;
+box-shadow:inset 0 0 6px 1px black, 0 0 4px black;
+}
+button.download:after {
+color: rgba(0,0,0,0.4);
+display: block;
+content: "works with Windows and Linux!";
+font-size: 12px;
+}
+button.download:hover {
+filter: brightness(120%);
+cursor: pointer
+}
+button.download:active {
+filter: brightness(60%)
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main {
+  width: 1000px;
+  height: 100%;
+}
+.container.maining .count {
+  font-weight: bold;
+}
+.container.maining .right-side {
+  width: 1000px;
+  float: right;
+  text-align: right;
+  position: absolute;
+  pointer-events: none;
+}
+.container.maining .left-side {
+  width: 1000px;
+  float: left;
+}
+.container .center-side {
+  width: 1000px;
+  text-align: center;
+}
+.container hr {
+  border-color: white;
+}
+.container a {
+  color: white;
+}
+.container hr.small {
+  width: 350px;
+  border-color: grey;
+}
+header #logo img {
+  height: 44px;
+  margin: 3px;
+}
+header .main {
+  width: 1000px;
+  margin: 0 auto;
+}
+.clearfix::before, .clearfix::after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#menu {
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 0 0;
+  width: 415px;
+  margin-top: 0;
+  float: left;
+  margin-left: 0;
+}
+#register {
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 0 0;
+  width: 215px;
+  margin-top: 0;
+  float: right;
+  margin-left: 0;
+}
+#register li {
+  float: right;
+  margin-right: 10px;
+}
+#register li span {
+  font-size: 12px;
+}
+#menu li {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+}
+#menu li p {
+  margin-top: 1px;
+  color: white;
+}
+#menu li span {
+  font-size: 16px;
+}
