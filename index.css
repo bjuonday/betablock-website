@@ -9,7 +9,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 @font-face {
   font-family: Minecraft;
-  src: url('/fonts/minecraft.ttf');
+  src: url('fonts/minecraft.ttf');
 }
 .container button.download {
   margin-top: 25px;
@@ -22,14 +22,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 body {
   height: 100vh;
-  background: url('/images/bg.png') #111;
+  background: url('images/bg.png') #111;
   background-size: cover;
   backdrop-filter: blur(10px) contrast(0.8) brightness(45%);
   font: 13px/1.4 'Helvetica Neue', sans-serif;
   *font-size: small;
 }
 body.night {
-  background: url('/images/bg_night.png') #111;
+  background: url('images/bg_night.png') #111;
   backdrop-filter: blur(5px) contrast(0.85) brightness(65%);
 }
 .left-side .ok button {
@@ -111,7 +111,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 header {
-  background: url("/images/bg_top.png");
+  background: url("images/bg_top.png");
   animation: 6s moving-bg-h linear infinite;
   height: 48px;
   box-shadow: 0 1px 6px black;
@@ -141,7 +141,7 @@ header a {
   float: left;
   width: 260px;
   height: 48px;
-  background: transparent url(/images/file.png) no-repeat 0 4px;
+  background: transparent url(images/file.png) no-repeat 0 4px;
   background-size: 240px;
   display: block;
   overflow: hidden;
